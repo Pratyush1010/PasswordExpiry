@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Policy Admin</title>
+</head>
+<body>
+  <h1>Password Policy Admin</h1>
+
+  <form id="policyForm">
+    <label for="passwordLength">Password Length:</label>
+    <input type="number" id="passwordLength" name="passwordLength" required><br><br>
+
+    <label for="requireUppercase">Require Uppercase:</label>
+    <input type="checkbox" id="requireUppercase" name="requireUppercase"><br><br>
+
+    <label for="requireLowercase">Require Lowercase:</label>
+    <input type="checkbox" id="requireLowercase" name="requireLowercase"><br><br>
+
+    <label for="requireNumbers">Require Numbers:</label>
+    <input type="checkbox" id="requireNumbers" name="requireNumbers"><br><br>
+
+    <label for="requireSpecialChars">Require Special Characters:</label>
+    <input type="checkbox" id="requireSpecialChars" name="requireSpecialChars"><br><br>
+
+    <label for="enableExpiry">Enable Password Expiry:</label>
+    <input type="checkbox" id="enableExpiry" name="enableExpiry"><br><br>
+
+    <label for="passwordExpiry">Password Expiry (in days):</label>
+    <input type="number" id="passwordExpiry" name="passwordExpiry" disabled><br><br>
+
+    <label for="passwordExpiryNotification">Password Expiry Notification (in days):</label>
+    <input type="number" id="passwordExpiryNotification" name="passwordExpiryNotification" disabled><br><br>
+
+    <input type="submit" value="Save Policy">
+  </form>
+
+  <script src="admin.js"></script>
+</body>
+</html>
